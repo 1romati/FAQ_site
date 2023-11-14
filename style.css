@@ -1,0 +1,50 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 1.2em;
+}
+
+html {
+  background: #f2f1f4;
+  color: #19171c;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.faq {
+  font-family: Arial, sans-serif;
+}
+
+h1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  font-size: 2em;
+}
+
+.accordion {
+  width: 600px;
+  background-color: grey;
+  cursor: pointer;
+}
+
+.title {
+  background-color: grey;
+  padding-left: 20px;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.description {
+  background-color: lightgray;
+  padding-left: 20px;
+  font-size: 0.7em;
+  display: none;
+}
+
+.title.active + .description {
+  display: block;
+}
